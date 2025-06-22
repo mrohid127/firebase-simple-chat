@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Firebase Simple Chat</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="login-form">
+                <h2>Login / Register</h2>
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
+                <button id="login-btn">Login</button>
+                <button id="register-btn" style="background: #007bff; margin-top: 0.5rem">Register</button>
+            </div>
+
+            <div id="chat-app" class="hidden" style="display: none">
+                <div class="chat-container">
+                    <div class="sidebar">
+                        <h3>Chats</h3>
+                        <div id="chat-list"></div>
+                        <hr />
+                        <h4>Mulai Chat Baru</h4>
+                        <div id="new-chat-wrapper">
+                            <button id="toggle-recipient" title="Mulai chat baru">➕ Chat Baru</button>
+                            <div id="recipient-modal" class="hidden">
+                                <div class="modal-content">
+                                    <button id="close-recipient-modal">&times;</button>
+                                    <div class="modal-header">Pilih Lawan Chat</div>
+                                    <ul id="recipient-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-window">
+                        <!-- <div class="chat-header">Chat</div> -->
+                        <div id="chat-box"></div>
+                        <input type="text" id="message" placeholder="Tulis pesan..." />
+                        <button id="send-btn">Kirim</button>
+                        <button id="logout-btn" style="background: #f44336; margin-top: 1rem">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Firebase CDN -->
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
