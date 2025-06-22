@@ -2,7 +2,7 @@
 
 A minimalist **1-on-1 real-time chat app** powered by **Firebase Realtime Database** and **Authentication**, built using **HTML**, **CSS**, and **jQuery** — no frameworks needed.
 
-🔗 **Live Demo:** [https://mrohid127.github.io/firebase-simple-cha/](https://mrohid127.github.io/firebase-simple-cha/)
+🔗 **Live Demo:** [https://mrohid127.github.io/firebase-simple-cha/](https://mrohid127.github.io/firebase-simple-chat/)
 
 ---
 
